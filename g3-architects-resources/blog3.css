@@ -1,0 +1,230 @@
+*{
+    margin: 0; padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+html{
+    font-size: 16px;
+}
+header{
+    background: rgba(255, 144, 14, 0.10);
+}
+nav{
+    display: flex; justify-content: space-between;
+    align-items: center; padding-top: 30px;
+}
+ul{
+    display: flex; justify-content: space-between;
+    align-items: center; 
+}
+nav li{
+    list-style: none;
+    font-size: 1.112rem;
+}
+.menu{
+    width: 34%; padding-right: 20px; 
+}
+.logo{
+    padding-left: 50px;
+}
+.logo h1{
+    font-size: 2.8rem; font-weight: 700;
+}
+.head_text{
+    width: 55%; margin-left: auto; margin-right: auto;
+    margin-top: 120px; 
+}
+.head_text h1{
+    font-size: 3rem; text-align: center;
+}
+.head_text p{
+    font-size: 1rem; font-weight:400; 
+    color: #727272; text-align: center; 
+}
+.btn{
+     width: 170px; height: 56px; 
+     background-color: #FF900E; color: white; font-size: 1.25rem;
+     border-radius: 8px; border: 0px; margin-top: 40px; margin-bottom: 40px;
+     margin-left: auto; margin-right: auto;
+     
+}
+.image{
+    width: 70%;  height: 66vh; margin: 0 auto;
+    padding-bottom: 30px;
+}
+@media screen and (min-width:500px) and (max-width:976px){
+    
+    nav{
+        flex-direction: column; justify-content: center;
+    }
+    .menu{
+        width: 64%;
+    }
+    .head_text{
+        width: 92%;
+    }
+    .image{
+        width: 96%;
+    }
+    .logo h1{font-size: 2rem;}
+
+    .head_text h1{ font-size: 2rem;} 
+}
+@media screen and (min-width:345px) and (max-width:499px){
+    
+    nav{
+        flex-direction: column; justify-content: center; padding: 1px auto 1px auto;
+    }
+    .menu{
+        width: 96%; padding: 1px auto 1px auto;
+    }
+    .head_text{
+        width: 98%; padding: 1px auto 1px auto;
+    }
+    .image{
+        width: 99%; padding: 1px auto 1px auto;
+    }
+    .logo h1{font-size: 1.5rem; padding: 1px auto 1px auto;}
+
+    .head_text h1{ font-size: 1.8rem; padding: 1px auto 1px auto;}
+
+    .btn{
+        width: 120px; height: 50px; font-size: 1rem;
+        padding: 1px auto 1px auto;
+    }
+    .special{
+        font-size: 12px;
+    }
+}
+
+
+/* It is the end of media query and the princilpile part of head section*/
+
+.container{
+     width: 87%;   display: flex; 
+     justify-content: space-between;
+     margin: 60px auto 10px auto;
+}
+.x{
+        width: 36%; 
+}
+.left_container{
+    display: flex; flex-wrap: wrap; gap: 5px; width: 63%;
+ 
+}
+.left_container div{
+       width: 49%; height: 49%;
+}
+.right_container{
+      padding-left: 20px; 
+      padding-top: 200px;
+      padding-bottom: 120px;
+     
+}
+.right_container h1{
+    font-size: 2.8rem; font-weight: 500;
+}
+.right_container p{
+    font-size: 1rem; color: #727272; font-weight: 400;
+    padding-top: 40px;
+}
+@media screen and (min-width:345px) and (max-width:976px){
+    
+    .container{
+        flex-direction: column; width: 98%; padding: 1px auto 1px auto;
+    }
+    .x{
+        width: 99%;  padding: 1px auto 1px auto;
+    }
+    .right_container{
+        padding-top: 100px;
+        padding-bottom: 100px; padding: 1px auto 1px auto;
+    }
+    .right_container h1{
+        font-size: 2rem; padding: 1px auto 1px auto;
+    }
+}
+
+
+
+/* it is end of a part of main content and the stat of onather content*/
+
+.hard_content{
+    width: 89%;  margin-left: 70px; position: relative;
+    margin-top: 100px; display: flex; justify-content: space-between;
+}
+.left_hard{
+    width: 51%; 
+}
+.right_hard{
+    width: 45%; 
+    background-image: url(images/architect.png);
+    background-size: contain; background-repeat: no-repeat;
+    border-radius: 8px;
+}
+.left_hard h1{
+    color: #131313; font-size: 2.8rem; margin-top: 50px;
+    font-weight: 700; border-left: 10px solid #FF900E;
+}
+.left_hard p{
+    color: #727272;
+     line-height: 26px;
+    font-size: 1rem; margin-top: 20px;
+}
+.left_hard div{
+   width: 86%; border-radius: 8px;
+   background: #FFF; margin-top: 36px;
+   
+   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.left_hard div, h1, p{
+    padding: 36px auto 0 auto;
+}
+
+@media screen and (min-width:540px) and (max-width:1080px) {
+    
+    .hard_content{
+        flex-direction: column; width: 96%;
+        margin: 0 auto 0 auto;
+       padding: 0 auto 0 auto;
+    }
+    .right_hard{
+        width: 98%;    height: 60vh;    margin: 0 auto 0 auto;
+        padding: 0 auto 0 auto;
+       
+    }
+    .left_hard{
+        width:98%;   margin: 0 auto 0 auto;
+        padding: 0 auto 0 auto;
+    }
+}
+@media screen and (min-width:344px) and (max-width:539px) {
+    .hard_content{
+        flex-direction: column; width: 98%;   margin: 1px auto 1px auto;
+        padding: 1px auto 1px auto;
+    }
+    .right_hard{
+        width: 98%;    height: 60vh;    margin: 1px auto 1px auto;
+        padding: 1px auto 1px auto;
+    }
+    .left_hard{
+        width:98%;   margin: 1px auto 1px auto;
+        padding: 0 auto 0 auto;
+    }
+    .hard_content h1{
+        font-size: 22px;   margin: 1px auto 1px auto;
+        padding: 0 auto 0 auto;
+    }
+    .hard_content h2{
+        font-size: 18px;   margin: 1px auto 1px auto;
+        padding: 0 auto 0 auto;
+    }
+    .hard_content p{
+        font-size: 13px;   margin: 1px auto 1px auto;
+        padding: 0 auto 0 auto;
+    }
+}
+
+
+
+
+
